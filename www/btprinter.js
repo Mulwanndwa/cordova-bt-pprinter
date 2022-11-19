@@ -15,3 +15,7 @@ exports.printText = function(mac, str, successCallback, errorCallback) {
 exports.printImage = function(mac, str, successCallback, errorCallback) {
     cordova.exec(successCallback, errorCallback, 'BluetoothPrinter', 'printImage', [mac, str]);
 };
+
+exports.opencashBox = function(mac, str, successCallback, errorCallback) {
+    cordova.exec(successCallback, errorCallback, 'BluetoothPrinter', 'opencashBox', [mac, str]);
+};

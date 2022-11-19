@@ -29,6 +29,7 @@ import android.util.Log;
 
 import com.zebra.sdk.comm.*;
 import com.zebra.sdk.printer.*;
+import com.imin.library.IminSDKManager;
 
 public class BluetoothPrinter extends CordovaPlugin {
 
