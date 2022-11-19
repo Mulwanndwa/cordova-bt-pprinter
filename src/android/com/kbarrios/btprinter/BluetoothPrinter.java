@@ -87,6 +87,15 @@ public class BluetoothPrinter extends CordovaPlugin {
             }
             return true;
         }
+        if (action.equals("opencashBox")) {
+            try {
+                IminSDKManager.opencashBox();
+            } catch (Exception e) {
+                Log.e(LOG_TAG, e.getMessage());
+                e.printStackTrace();
+            }
+            return true;
+        }
         return false;
     }
 
